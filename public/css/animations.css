@@ -1,0 +1,61 @@
+.reveal-up {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 320ms ease-out, transform 320ms ease-out;
+}
+
+.reveal-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.node-lg,
+.node-md,
+.node-sm {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.node-md {
+  animation-delay: 0.4s;
+}
+
+.node-sm {
+  animation-delay: 0.9s;
+}
+
+.connection {
+  animation: flow 2.4s linear infinite;
+}
+
+.connection.c2 {
+  animation-delay: 0.6s;
+}
+
+.connection.c3 {
+  animation-delay: 1s;
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 26px rgba(34, 211, 238, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(34, 211, 238, 0.9);
+    transform: scale(1.06);
+  }
+}
+
+@keyframes flow {
+  0% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+

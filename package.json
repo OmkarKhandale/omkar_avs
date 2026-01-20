@@ -1,0 +1,23 @@
+{
+  "name": "avs-bfsi-landing",
+  "version": "1.0.0",
+  "description": "Modern BFSI software company landing page with Node.js/Express backend and vanilla JS frontend, deployable on Vercel.",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "node server/index.js",
+    "start": "node server/index.js"
+  },
+  "keywords": [
+    "fintech",
+    "bfsi",
+    "landing-page",
+    "express",
+    "vercel"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
+
